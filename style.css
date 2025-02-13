@@ -1,0 +1,26 @@
+:root {
+  --color1: rgb(219, 174, 245);
+  --color2: rgb(236, 166, 245);
+  --color3: rgb(134, 181, 235);
+  --color4: rgb(128, 182, 128);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./img/Indigo.jpg) center/cover;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: rgba(0, 0, 0, 0.507);
+  width: calc(100% - 50px);
+  padding: 20px 20px 6px;
+  box-shadow: 0 0 0 black;
+}
