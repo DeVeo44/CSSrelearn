@@ -67,3 +67,42 @@ h1 {
   );
   height: 100px;
 }
+.polygone::after {
+  content: "Un texte";
+  position: absolute;
+  color: var(--color4);
+  background: var(--color2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(344deg);
+  width: 90px;
+  padding: 4px;
+  text-align: center;
+}
+p {
+  line-height: 28px;
+  margin: 20px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+}
+p::selection {
+  background: var(--color4);
+  color: var(--color2);
+}
+.checkbox-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 30px;
+}
+input[type="checkbox"] {
+}
+
+input[type="checkbox"] :checked {
+  display: none;
+}
+label {
+  cursor: pointer;
+  border: 1px solid var(--color1);
+}
